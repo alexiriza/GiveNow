@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1586A811A1734EA00AF95D0 /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1586A801A1734EA00AF95D0 /* MainPageViewController.m */; };
+		C15C68FE1A170283005567A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C68FD1A170283005567A2 /* main.m */; };
+		C15C69011A170283005567A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C69001A170283005567A2 /* AppDelegate.m */; };
+		C15C69041A170283005567A2 /* GiveNow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C15C69021A170283005567A2 /* GiveNow.xcdatamodeld */; };
+		C15C69071A170283005567A2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C69061A170283005567A2 /* LoginViewController.m */; };
+		C15C690A1A170283005567A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15C69081A170283005567A2 /* Main.storyboard */; };
+		C15C690C1A170283005567A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15C690B1A170283005567A2 /* Images.xcassets */; };
+		C15C690F1A170283005567A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C15C690D1A170283005567A2 /* LaunchScreen.xib */; };
+		C15C691B1A170283005567A2 /* GiveNowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C691A1A170283005567A2 /* GiveNowTests.m */; };
+		C15C69321A1704F7005567A2 /* libDwollaOAuthLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C692F1A1704E8005567A2 /* libDwollaOAuthLib.a */; };
+		C1B231CB1A18611C0024E020 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231CA1A18611C0024E020 /* Parse.framework */; };
+		C1B231CF1A1861240024E020 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231CE1A1861240024E020 /* Bolts.framework */; };
+		C1B231D11A1861690024E020 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231D01A1861690024E020 /* AudioToolbox.framework */; };
+		C1B231D31A18616D0024E020 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231D21A18616D0024E020 /* CFNetwork.framework */; };
+		C1B231D51A1861710024E020 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231D41A1861710024E020 /* CoreGraphics.framework */; };
+		C1B231D71A1861750024E020 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231D61A1861750024E020 /* CoreLocation.framework */; };
+		C1B231D91A18617B0024E020 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231D81A18617B0024E020 /* libz.dylib */; };
+		C1B231DB1A1861810024E020 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231DA1A1861810024E020 /* MobileCoreServices.framework */; };
+		C1B231DD1A1861850024E020 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231DC1A1861850024E020 /* QuartzCore.framework */; };
+		C1B231DF1A1861890024E020 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231DE1A1861890024E020 /* Security.framework */; };
+		C1B231E11A18618E0024E020 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231E01A18618E0024E020 /* StoreKit.framework */; };
+		C1B231E31A1861940024E020 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B231E21A1861940024E020 /* SystemConfiguration.framework */; };
+		C1F206481A18A39700116809 /* CustomPagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F206451A18A39700116809 /* CustomPagerViewController.m */; };
+		C1F206491A18A39700116809 /* PagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F206471A18A39700116809 /* PagerViewController.m */; };
+		C1F2064F1A18A70A00116809 /* EAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F2064E1A18A70A00116809 /* EAViewController.m */; };
+		C1F206521A18A78100116809 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F206511A18A78100116809 /* GDViewController.m */; };
+		C1F206551A18A83600116809 /* SCIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F206541A18A83600116809 /* SCIViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C15C69151A170283005567A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15C68F01A170283005567A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C15C68F71A170283005567A2;
+			remoteInfo = GiveNow;
+		};
+		C15C692A1A1704E8005567A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F534DB9A157EB04E000E2BF8;
+			remoteInfo = DwollaOAuth;
+		};
+		C15C692C1A1704E8005567A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EDBE3DA16811A71007FD655;
+			remoteInfo = Test;
+		};
+		C15C692E1A1704E8005567A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 889FF8A4166699B40037DC40;
+			remoteInfo = DwollaOAuthLib;
+		};
+		C15C69301A1704F4005567A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 889FF8A3166699B40037DC40;
+			remoteInfo = DwollaOAuthLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1586A7F1A1734EA00AF95D0 /* MainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		C1586A801A1734EA00AF95D0 /* MainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		C15C68F81A170283005567A2 /* Give Now.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Give Now.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15C68FC1A170283005567A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15C68FD1A170283005567A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C15C68FF1A170283005567A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C15C69001A170283005567A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C15C69031A170283005567A2 /* GiveNow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GiveNow.xcdatamodel; sourceTree = "<group>"; };
+		C15C69051A170283005567A2 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C15C69061A170283005567A2 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C15C69091A170283005567A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C15C690B1A170283005567A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C15C690E1A170283005567A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C15C69141A170283005567A2 /* GiveNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiveNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15C69191A170283005567A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15C691A1A170283005567A2 /* GiveNowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiveNowTests.m; sourceTree = "<group>"; };
+		C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DwollaOAuth.xcodeproj; path = "dwolla-ios-master/DwollaOAuth.xcodeproj"; sourceTree = "<group>"; };
+		C1B231CA1A18611C0024E020 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C1B231CE1A1861240024E020 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		C1B231D01A1861690024E020 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C1B231D21A18616D0024E020 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C1B231D41A1861710024E020 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C1B231D61A1861750024E020 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C1B231D81A18617B0024E020 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C1B231DA1A1861810024E020 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C1B231DC1A1861850024E020 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C1B231DE1A1861890024E020 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C1B231E01A18618E0024E020 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C1B231E21A1861940024E020 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C1F206441A18A39700116809 /* CustomPagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPagerViewController.h; sourceTree = "<group>"; };
+		C1F206451A18A39700116809 /* CustomPagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPagerViewController.m; sourceTree = "<group>"; };
+		C1F206461A18A39700116809 /* PagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagerViewController.h; sourceTree = "<group>"; };
+		C1F206471A18A39700116809 /* PagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagerViewController.m; sourceTree = "<group>"; };
+		C1F2064D1A18A70A00116809 /* EAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAViewController.h; sourceTree = "<group>"; };
+		C1F2064E1A18A70A00116809 /* EAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAViewController.m; sourceTree = "<group>"; };
+		C1F206501A18A78100116809 /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
+		C1F206511A18A78100116809 /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
+		C1F206531A18A83600116809 /* SCIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIViewController.h; sourceTree = "<group>"; };
+		C1F206541A18A83600116809 /* SCIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C15C68F51A170283005567A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1B231E31A1861940024E020 /* SystemConfiguration.framework in Frameworks */,
+				C1B231E11A18618E0024E020 /* StoreKit.framework in Frameworks */,
+				C1B231DF1A1861890024E020 /* Security.framework in Frameworks */,
+				C1B231DD1A1861850024E020 /* QuartzCore.framework in Frameworks */,
+				C1B231DB1A1861810024E020 /* MobileCoreServices.framework in Frameworks */,
+				C1B231D91A18617B0024E020 /* libz.dylib in Frameworks */,
+				C1B231D71A1861750024E020 /* CoreLocation.framework in Frameworks */,
+				C1B231D51A1861710024E020 /* CoreGraphics.framework in Frameworks */,
+				C1B231D31A18616D0024E020 /* CFNetwork.framework in Frameworks */,
+				C1B231D11A1861690024E020 /* AudioToolbox.framework in Frameworks */,
+				C1B231CF1A1861240024E020 /* Bolts.framework in Frameworks */,
+				C1B231CB1A18611C0024E020 /* Parse.framework in Frameworks */,
+				C15C69321A1704F7005567A2 /* libDwollaOAuthLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15C69111A170283005567A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C15C68EF1A170283005567A2 = {
+			isa = PBXGroup;
+			children = (
+				C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */,
+				C15C68FA1A170283005567A2 /* GiveNow */,
+				C15C69171A170283005567A2 /* GiveNowTests */,
+				C15C68F91A170283005567A2 /* Products */,
+				C1B231E41A1861A10024E020 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C15C68F91A170283005567A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C15C68F81A170283005567A2 /* Give Now.app */,
+				C15C69141A170283005567A2 /* GiveNowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C15C68FA1A170283005567A2 /* GiveNow */ = {
+			isa = PBXGroup;
+			children = (
+				C15C68FF1A170283005567A2 /* AppDelegate.h */,
+				C15C69001A170283005567A2 /* AppDelegate.m */,
+				C15C69051A170283005567A2 /* LoginViewController.h */,
+				C15C69061A170283005567A2 /* LoginViewController.m */,
+				C15C69081A170283005567A2 /* Main.storyboard */,
+				C1F206531A18A83600116809 /* SCIViewController.h */,
+				C1F206541A18A83600116809 /* SCIViewController.m */,
+				C1F206501A18A78100116809 /* GDViewController.h */,
+				C1F206511A18A78100116809 /* GDViewController.m */,
+				C1F2064D1A18A70A00116809 /* EAViewController.h */,
+				C1F2064E1A18A70A00116809 /* EAViewController.m */,
+				C1586A7F1A1734EA00AF95D0 /* MainPageViewController.h */,
+				C1586A801A1734EA00AF95D0 /* MainPageViewController.m */,
+				C1F206441A18A39700116809 /* CustomPagerViewController.h */,
+				C1F206451A18A39700116809 /* CustomPagerViewController.m */,
+				C1F206461A18A39700116809 /* PagerViewController.h */,
+				C1F206471A18A39700116809 /* PagerViewController.m */,
+				C15C690B1A170283005567A2 /* Images.xcassets */,
+				C15C690D1A170283005567A2 /* LaunchScreen.xib */,
+				C15C69021A170283005567A2 /* GiveNow.xcdatamodeld */,
+				C15C68FB1A170283005567A2 /* Supporting Files */,
+			);
+			path = GiveNow;
+			sourceTree = "<group>";
+		};
+		C15C68FB1A170283005567A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C15C68FC1A170283005567A2 /* Info.plist */,
+				C15C68FD1A170283005567A2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C15C69171A170283005567A2 /* GiveNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				C15C691A1A170283005567A2 /* GiveNowTests.m */,
+				C15C69181A170283005567A2 /* Supporting Files */,
+			);
+			path = GiveNowTests;
+			sourceTree = "<group>";
+		};
+		C15C69181A170283005567A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C15C69191A170283005567A2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C15C69251A1704E8005567A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C15C692B1A1704E8005567A2 /* DwollaOAuth.app */,
+				C15C692D1A1704E8005567A2 /* Test.app */,
+				C15C692F1A1704E8005567A2 /* libDwollaOAuthLib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1B231E41A1861A10024E020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1B231E21A1861940024E020 /* SystemConfiguration.framework */,
+				C1B231E01A18618E0024E020 /* StoreKit.framework */,
+				C1B231DE1A1861890024E020 /* Security.framework */,
+				C1B231DC1A1861850024E020 /* QuartzCore.framework */,
+				C1B231DA1A1861810024E020 /* MobileCoreServices.framework */,
+				C1B231D81A18617B0024E020 /* libz.dylib */,
+				C1B231D61A1861750024E020 /* CoreLocation.framework */,
+				C1B231D41A1861710024E020 /* CoreGraphics.framework */,
+				C1B231D21A18616D0024E020 /* CFNetwork.framework */,
+				C1B231D01A1861690024E020 /* AudioToolbox.framework */,
+				C1B231CE1A1861240024E020 /* Bolts.framework */,
+				C1B231CA1A18611C0024E020 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C15C68F71A170283005567A2 /* GiveNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15C691E1A170283005567A2 /* Build configuration list for PBXNativeTarget "GiveNow" */;
+			buildPhases = (
+				C15C68F41A170283005567A2 /* Sources */,
+				C15C68F51A170283005567A2 /* Frameworks */,
+				C15C68F61A170283005567A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15C69311A1704F4005567A2 /* PBXTargetDependency */,
+			);
+			name = GiveNow;
+			productName = GiveNow;
+			productReference = C15C68F81A170283005567A2 /* Give Now.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C15C69131A170283005567A2 /* GiveNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C15C69211A170283005567A2 /* Build configuration list for PBXNativeTarget "GiveNowTests" */;
+			buildPhases = (
+				C15C69101A170283005567A2 /* Sources */,
+				C15C69111A170283005567A2 /* Frameworks */,
+				C15C69121A170283005567A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C15C69161A170283005567A2 /* PBXTargetDependency */,
+			);
+			name = GiveNowTests;
+			productName = GiveNowTests;
+			productReference = C15C69141A170283005567A2 /* GiveNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C15C68F01A170283005567A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Alex Iriza";
+				TargetAttributes = {
+					C15C68F71A170283005567A2 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C15C69131A170283005567A2 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = C15C68F71A170283005567A2;
+					};
+				};
+			};
+			buildConfigurationList = C15C68F31A170283005567A2 /* Build configuration list for PBXProject "GiveNow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C15C68EF1A170283005567A2;
+			productRefGroup = C15C68F91A170283005567A2 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C15C69251A1704E8005567A2 /* Products */;
+					ProjectRef = C15C69241A1704E8005567A2 /* DwollaOAuth.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C15C68F71A170283005567A2 /* GiveNow */,
+				C15C69131A170283005567A2 /* GiveNowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C15C692B1A1704E8005567A2 /* DwollaOAuth.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = DwollaOAuth.app;
+			remoteRef = C15C692A1A1704E8005567A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15C692D1A1704E8005567A2 /* Test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Test.app;
+			remoteRef = C15C692C1A1704E8005567A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C15C692F1A1704E8005567A2 /* libDwollaOAuthLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDwollaOAuthLib.a;
+			remoteRef = C15C692E1A1704E8005567A2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C15C68F61A170283005567A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15C690A1A170283005567A2 /* Main.storyboard in Resources */,
+				C15C690F1A170283005567A2 /* LaunchScreen.xib in Resources */,
+				C15C690C1A170283005567A2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15C69121A170283005567A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C15C68F41A170283005567A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1586A811A1734EA00AF95D0 /* MainPageViewController.m in Sources */,
+				C1F206551A18A83600116809 /* SCIViewController.m in Sources */,
+				C1F206481A18A39700116809 /* CustomPagerViewController.m in Sources */,
+				C15C69011A170283005567A2 /* AppDelegate.m in Sources */,
+				C15C69041A170283005567A2 /* GiveNow.xcdatamodeld in Sources */,
+				C15C69071A170283005567A2 /* LoginViewController.m in Sources */,
+				C1F2064F1A18A70A00116809 /* EAViewController.m in Sources */,
+				C1F206521A18A78100116809 /* GDViewController.m in Sources */,
+				C1F206491A18A39700116809 /* PagerViewController.m in Sources */,
+				C15C68FE1A170283005567A2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C15C69101A170283005567A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15C691B1A170283005567A2 /* GiveNowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C15C69161A170283005567A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C15C68F71A170283005567A2 /* GiveNow */;
+			targetProxy = C15C69151A170283005567A2 /* PBXContainerItemProxy */;
+		};
+		C15C69311A1704F4005567A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DwollaOAuthLib;
+			targetProxy = C15C69301A1704F4005567A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C15C69081A170283005567A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C15C69091A170283005567A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C15C690D1A170283005567A2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C15C690E1A170283005567A2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C15C691C1A170283005567A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C15C691D1A170283005567A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C15C691F1A170283005567A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/dwolla-ios-master/DwollaOAuthLib/**",
+				);
+				INFOPLIST_FILE = GiveNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C15C69201A170283005567A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/dwolla-ios-master/DwollaOAuthLib/**",
+				);
+				INFOPLIST_FILE = GiveNow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C15C69221A170283005567A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GiveNowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiveNow.app/GiveNow";
+			};
+			name = Debug;
+		};
+		C15C69231A170283005567A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GiveNowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiveNow.app/GiveNow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C15C68F31A170283005567A2 /* Build configuration list for PBXProject "GiveNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15C691C1A170283005567A2 /* Debug */,
+				C15C691D1A170283005567A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C15C691E1A170283005567A2 /* Build configuration list for PBXNativeTarget "GiveNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15C691F1A170283005567A2 /* Debug */,
+				C15C69201A170283005567A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C15C69211A170283005567A2 /* Build configuration list for PBXNativeTarget "GiveNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C15C69221A170283005567A2 /* Debug */,
+				C15C69231A170283005567A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C15C69021A170283005567A2 /* GiveNow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C15C69031A170283005567A2 /* GiveNow.xcdatamodel */,
+			);
+			currentVersion = C15C69031A170283005567A2 /* GiveNow.xcdatamodel */;
+			path = GiveNow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C15C68F01A170283005567A2 /* Project object */;
+}

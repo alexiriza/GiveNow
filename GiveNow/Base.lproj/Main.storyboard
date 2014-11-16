@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="387"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="syv-J7-auu">
+            <objects>
+                <viewController storyboardIdentifier="MainPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="71i-ZS-zTj" customClass="MainPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mDu-py-ctY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cia-23-K8L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iIT-Do-mUe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-dR-3XT">
+                                <rect key="frame" x="96" y="304" width="129" height="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQD-iu-y4Z">
+                                <rect key="frame" x="255" y="530" width="49" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="71i-ZS-zTj" eventType="touchUpInside" id="9Gh-sp-qC3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj4-7Z-AQi">
+                                <rect key="frame" x="16" y="530" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ljy-Dy-wo5"/>
+                                </constraints>
+                                <state key="normal" title="The Charities">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="owq-zy-1wW" kind="presentation" id="BV9-UF-s2Y"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oax-50-v2d">
+                                <rect key="frame" x="85" y="48" width="151" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Lcc-jj-sm1"/>
+                                    <constraint firstAttribute="width" constant="151" id="sFC-pa-k4W"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHa-la-dwi">
+                                <rect key="frame" x="231" y="210" width="73" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="1TP-HE-7sI"/>
+                                    <constraint firstAttribute="width" constant="73" id="fER-a1-no4"/>
+                                    <constraint firstAttribute="height" constant="62" id="l87-gp-lqO"/>
+                                    <constraint firstAttribute="width" constant="63" id="x2K-aE-y5r"/>
+                                </constraints>
+                                <state key="normal" image="SCI">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1TP-HE-7sI"/>
+                                        <exclude reference="x2K-aE-y5r"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="selectSCIDown:" destination="71i-ZS-zTj" eventType="touchDown" id="QtI-oq-4US"/>
+                                    <action selector="selectSCIUp:" destination="71i-ZS-zTj" eventType="touchUpInside" id="DRb-ze-9Up"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or2-RA-V74">
+                                <rect key="frame" x="115" y="210" width="106" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="8Bf-NL-8hN"/>
+                                    <constraint firstAttribute="width" constant="93" id="W96-fU-6Gr"/>
+                                    <constraint firstAttribute="width" constant="106" id="hqT-IE-NYD"/>
+                                    <constraint firstAttribute="height" constant="54" id="mqB-cJ-N66"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="GiveDirectly">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="W96-fU-6Gr"/>
+                                        <exclude reference="mqB-cJ-N66"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="selectGDDown:" destination="71i-ZS-zTj" eventType="touchDown" id="dWm-E5-OPH"/>
+                                    <action selector="selectGDUp:" destination="71i-ZS-zTj" eventType="touchUpInside" id="tin-7i-Vjs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOS-gt-O7x">
+                                <rect key="frame" x="16" y="210" width="87" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="MH2-XH-u6k"/>
+                                    <constraint firstAttribute="height" constant="62" id="XeG-cg-98x"/>
+                                    <constraint firstAttribute="width" constant="87" id="qo7-mG-9kf"/>
+                                    <constraint firstAttribute="width" constant="76" id="xv3-qR-MR0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="EvidenceAction">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MH2-XH-u6k"/>
+                                        <exclude reference="xv3-qR-MR0"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="selectEADown:" destination="71i-ZS-zTj" eventType="touchDown" id="PX2-X5-W35"/>
+                                    <action selector="selectEAUp:" destination="71i-ZS-zTj" eventType="touchUpInside" id="aZ3-9M-fFr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-wR-BWl">
+                                <rect key="frame" x="16" y="491" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDh-9N-zsN">
+                                <rect key="frame" x="91" y="399" width="139" height="73"/>
+                                <color key="backgroundColor" red="0.74901960784313726" green="0.8901960784313725" blue="0.44705882352941179" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="ScA-fM-Uri"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" red="0.58431372549019611" green="0.058823529411764705" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate:" destination="71i-ZS-zTj" eventType="touchUpInside" id="TyX-TZ-WnZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cIa-dR-3XT" firstAttribute="top" secondItem="MOS-gt-O7x" secondAttribute="bottom" constant="32" id="0ld-lP-4DL"/>
+                            <constraint firstItem="EHa-la-dwi" firstAttribute="leading" secondItem="Or2-RA-V74" secondAttribute="trailing" constant="10" id="3jA-73-2k7"/>
+                            <constraint firstItem="Or2-RA-V74" firstAttribute="top" secondItem="oax-50-v2d" secondAttribute="bottom" constant="32" id="6MZ-o3-tfL"/>
+                            <constraint firstItem="EHa-la-dwi" firstAttribute="trailing" secondItem="bfk-wR-BWl" secondAttribute="trailing" id="7wT-To-Jvg"/>
+                            <constraint firstItem="EHa-la-dwi" firstAttribute="trailing" secondItem="rQD-iu-y4Z" secondAttribute="trailing" id="8IT-s6-sWN"/>
+                            <constraint firstAttribute="bottom" secondItem="GDh-9N-zsN" secondAttribute="bottom" constant="96" id="C3H-Io-00b"/>
+                            <constraint firstItem="MOS-gt-O7x" firstAttribute="height" secondItem="Or2-RA-V74" secondAttribute="height" id="GAJ-fC-mk9"/>
+                            <constraint firstItem="rQD-iu-y4Z" firstAttribute="trailing" secondItem="iIT-Do-mUe" secondAttribute="trailingMargin" id="KPC-zN-pzF"/>
+                            <constraint firstItem="MOS-gt-O7x" firstAttribute="height" secondItem="EHa-la-dwi" secondAttribute="height" id="REw-Cm-E1b"/>
+                            <constraint firstItem="Fj4-7Z-AQi" firstAttribute="top" secondItem="bfk-wR-BWl" secondAttribute="bottom" constant="18" id="Ue3-7t-OM0"/>
+                            <constraint firstItem="rQD-iu-y4Z" firstAttribute="trailing" secondItem="bfk-wR-BWl" secondAttribute="trailing" id="XTg-oE-sdd"/>
+                            <constraint firstItem="GDh-9N-zsN" firstAttribute="centerX" secondItem="bfk-wR-BWl" secondAttribute="centerX" id="YW3-K6-LoO"/>
+                            <constraint firstItem="oax-50-v2d" firstAttribute="top" secondItem="mDu-py-ctY" secondAttribute="bottom" constant="28" id="aC5-g3-Bqz"/>
+                            <constraint firstItem="MOS-gt-O7x" firstAttribute="leading" secondItem="bfk-wR-BWl" secondAttribute="leading" id="aHq-eb-R3r"/>
+                            <constraint firstItem="GDh-9N-zsN" firstAttribute="centerX" secondItem="cIa-dR-3XT" secondAttribute="centerX" id="aQc-Pd-3VM"/>
+                            <constraint firstItem="Or2-RA-V74" firstAttribute="baseline" secondItem="MOS-gt-O7x" secondAttribute="baseline" id="bOY-Eq-zkU"/>
+                            <constraint firstItem="rQD-iu-y4Z" firstAttribute="baseline" secondItem="Fj4-7Z-AQi" secondAttribute="baseline" id="bxL-Jd-qna"/>
+                            <constraint firstItem="Fj4-7Z-AQi" firstAttribute="leading" secondItem="iIT-Do-mUe" secondAttribute="leadingMargin" id="d1K-P0-CWc"/>
+                            <constraint firstItem="EHa-la-dwi" firstAttribute="top" secondItem="Or2-RA-V74" secondAttribute="top" id="jUl-gw-aR6"/>
+                            <constraint firstItem="Fj4-7Z-AQi" firstAttribute="leading" secondItem="bfk-wR-BWl" secondAttribute="leading" id="kze-fN-eQl"/>
+                            <constraint firstItem="Cia-23-K8L" firstAttribute="top" secondItem="Fj4-7Z-AQi" secondAttribute="bottom" constant="8" symbolic="YES" id="mQe-lO-4gT"/>
+                            <constraint firstItem="MOS-gt-O7x" firstAttribute="baseline" secondItem="Or2-RA-V74" secondAttribute="baseline" id="pec-Zj-3im"/>
+                            <constraint firstItem="cIa-dR-3XT" firstAttribute="leading" secondItem="iIT-Do-mUe" secondAttribute="leadingMargin" constant="80" id="rT7-Gw-UH7"/>
+                            <constraint firstItem="GDh-9N-zsN" firstAttribute="leading" secondItem="iIT-Do-mUe" secondAttribute="leadingMargin" constant="75" id="rs4-xP-xx8"/>
+                            <constraint firstItem="bfk-wR-BWl" firstAttribute="top" secondItem="GDh-9N-zsN" secondAttribute="bottom" constant="19" id="s2c-ss-WMy"/>
+                            <constraint firstItem="oax-50-v2d" firstAttribute="centerX" secondItem="iIT-Do-mUe" secondAttribute="centerX" id="tba-hb-LeG"/>
+                            <constraint firstItem="oax-50-v2d" firstAttribute="leading" secondItem="iIT-Do-mUe" secondAttribute="leadingMargin" constant="69" id="xYe-Jy-O7T"/>
+                            <constraint firstItem="MOS-gt-O7x" firstAttribute="top" secondItem="oax-50-v2d" secondAttribute="bottom" constant="32" id="znr-zz-Dlb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="GAJ-fC-mk9"/>
+                                <exclude reference="REw-Cm-E1b"/>
+                                <exclude reference="pec-Zj-3im"/>
+                                <exclude reference="bOY-Eq-zkU"/>
+                                <exclude reference="8IT-s6-sWN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="amountTextField" destination="cIa-dR-3XT" id="Xv0-hS-0yW"/>
+                        <outlet property="donateButton" destination="GDh-9N-zsN" id="Bk8-av-6g3"/>
+                        <outlet property="eaButton" destination="MOS-gt-O7x" id="jDK-oz-LTc"/>
+                        <outlet property="gdButton" destination="Or2-RA-V74" id="1jq-Vw-qyr"/>
+                        <outlet property="logoutButton" destination="rQD-iu-y4Z" id="JNz-Pv-kel"/>
+                        <outlet property="messageLabel" destination="bfk-wR-BWl" id="OPr-fW-G17"/>
+                        <outlet property="sciButton" destination="EHa-la-dwi" id="NFf-pp-nYc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hG-IJ-5YZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="387"/>
+        </scene>
+        <!--Custom Pager View Controller-->
+        <scene sceneID="D8S-j4-sTJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q2Y-0F-NdC" sceneMemberID="firstResponder"/>
+                <viewController id="owq-zy-1wW" customClass="CustomPagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="80n-en-AeT"/>
+                        <viewControllerLayoutGuide type="bottom" id="rWq-lr-4lV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RGj-n4-4K4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcN-JE-pSH">
+                                <rect key="frame" x="16" y="530" width="35" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="owq-zy-1wW" eventType="touchUpInside" id="5ue-ey-hyN"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="APA-R7-LPa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
+                                <connections>
+                                    <outlet property="delegate" destination="owq-zy-1wW" id="Jik-HR-9M3"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="ATg-Fc-QfD">
+                                <rect key="frame" x="78" y="526" width="165" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="changePage:" destination="owq-zy-1wW" eventType="valueChanged" id="xo1-54-pLm"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="pageControl" destination="ATg-Fc-QfD" id="5FH-fj-GMF"/>
+                        <outlet property="scrollView" destination="APA-R7-LPa" id="mJu-Ft-dQg"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1220" y="387"/>
+        </scene>
+        <!--View 1-->
+        <scene sceneID="uVm-t7-w3z">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yxn-bz-eoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="View1" title="View 1" id="u9a-Ql-qUy" customClass="EAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8rV-6d-Dgy"/>
+                        <viewControllerLayoutGuide type="bottom" id="r7w-PS-c3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="chX-rG-Ghp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="The Deworm the World Initiative, led by Evidence Action, helps governments begin and grow school-based deworming programs.   " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF8-9s-oBl">
+                                <rect key="frame" x="32" y="141" width="256" height="193"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.15761408730158732" green="0.15761408730158732" blue="0.15761408730158732" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZt-SI-wmT">
+                                <rect key="frame" x="72" y="373" width="209" height="164"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuk-GE-Lrl">
+                                <rect key="frame" x="32" y="286" width="256" height="164"/>
+                                <string key="text">Deworm the World is one of three programs recommended by the charity evaluator GiveWell.  GiveWell estimates that it costs $0.35 per child dewormed. </string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.15463789680000001" green="0.15463789680000001" blue="0.15463789680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="So far you have donated ... to Evidence Action." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad2-MV-ZJq">
+                                <rect key="frame" x="32" y="384" width="256" height="164"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.15463789680000001" green="0.15463789680000001" blue="0.15463789680000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EvidenceAction" translatesAutoresizingMaskIntoConstraints="NO" id="1kT-Qj-XIR">
+                                <rect key="frame" x="65" y="28" width="190" height="135"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="Ad2-MV-ZJq" id="r5f-OC-45F"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1629" y="-239"/>
+        </scene>
+        <!--View 2-->
+        <scene sceneID="XP1-g1-vXu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fE7-T0-zKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="View2" title="View 2" id="yDs-5z-D0x" customClass="GDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bT5-0W-bqo"/>
+                        <viewControllerLayoutGuide type="bottom" id="VaT-rO-ZPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="js8-1b-dSz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GiveDirectly" translatesAutoresizingMaskIntoConstraints="NO" id="yzJ-6d-xpB">
+                                <rect key="frame" x="58" y="28" width="205" height="120"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="So far you have donated ... to GiveDirectly." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkj-Dz-XFA">
+                                <rect key="frame" x="32" y="384" width="256" height="164"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.16612929894179895" green="0.16612929894179895" blue="0.16612929894179895" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="GiveDirectly is one of three programs recommended by the charity evaluator GiveWell. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2q-tJ-hrG">
+                                <rect key="frame" x="32" y="293" width="256" height="164"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.16385582010582012" green="0.16385582010582012" blue="0.16385582010582012" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ak3-Gj-iUL">
+                                <rect key="frame" x="32" y="156" width="256" height="164"/>
+                                <string key="text">GiveDirectly transfers cash to low-income households in developing countries via mobile phone-linked payment services. It aims to deliver 90% of campaign expenses directly to its recipients.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.15879216269841268" green="0.15879216269841268" blue="0.15879216269841268" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="Lkj-Dz-XFA" id="2Vo-Lq-91n"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1629" y="402"/>
+        </scene>
+        <!--View 3-->
+        <scene sceneID="UbD-Ee-r2K">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNd-60-24s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="View3" title="View 3" id="Hhj-ue-Zfb" customClass="SCIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GNE-eC-eXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="gxB-O9-mgG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VTR-Ds-Xa2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML0-tS-aMu">
+                                <rect key="frame" x="134" y="220" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SCI" translatesAutoresizingMaskIntoConstraints="NO" id="o5z-uR-n3p">
+                                <rect key="frame" x="71" y="28" width="178" height="129"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="The Schistosomiasis Control Initiative works to fight schistosomiasis and intestinal worms in the world's poorest populations. " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuk-2x-Yb1">
+                                <rect key="frame" x="32" y="165" width="256" height="164"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.16819609788359791" green="0.16819609788359791" blue="0.16819609788359791" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NS-bi-74q">
+                                <rect key="frame" x="32" y="295" width="256" height="164"/>
+                                <string key="text">SCI is one of three programs recommended by the charity evaluator GiveWell.  GiveWell estimates that each treatment costs around $0.73-$0.99.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.18167162698412698" green="0.18167162698412698" blue="0.18167162698412698" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="So far you have donated ... to SCI." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG5-Si-hgm">
+                                <rect key="frame" x="32" y="396" width="256" height="164"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.17747602513227512" green="0.17747602513227512" blue="0.17747602513227512" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="KG5-Si-hgm" id="4ln-8X-q57"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1629" y="1045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EvidenceAction" width="357" height="249"/>
+        <image name="GiveDirectly" width="337" height="195"/>
+        <image name="Logo" width="177" height="152"/>
+        <image name="SCI" width="483" height="409"/>
+    </resources>
+</document>
